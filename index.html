@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="google-signin-client_id" content="832287626862-hfskuvv93ut8n30ashd78e53bc37qor5.apps.googleusercontent.com">
+
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -11,7 +13,7 @@
     Fore more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-  <base href="/F_Market_Web/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -31,6 +33,8 @@
 </head>
 <body>
   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
   <script>
   var firebaseConfig = {
     apiKey: "AIzaSyC_CH8uI70VT6KTkThHkrgvRE_X4ybIQkw",
@@ -49,7 +53,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=321513828');
+        navigator.serviceWorker.register('flutter_service_worker.js');
       });
     }
   </script>
